@@ -1,4 +1,15 @@
 # 快速汇率查询
+![license](http://github.zhangqx.com/file-checker/Louis-J/HUILV?path=LICENSE)
+![readme](http://github.zhangqx.com/file-checker/Louis-J/HUILV?path=README.md)
+![contributing](http://github.zhangqx.com/file-checker/Louis-J/HUILV?path=CONTRIBUTING.md)
+![coc](http://github.zhangqx.com/file-checker/Louis-J/HUILV?path=CODE_OF_CONDUCT.md)
+![codestyle](http://github.zhangqx.com/file-checker/Louis-J/HUILV?path=CODE_STYLE.md)
+![pulltemplate](http://github.zhangqx.com/file-checker/Louis-J/HUILV?path=.github/PULL_REQUEST_TEMPLATE.md)
+
+<!-- ![contributor](http://github.zhangqx.com/data/Louis-J/HUILV?type=contributor)
+![participant](http://github.zhangqx.com/data/Louis-J/HUILV?type=participant)
+![follower](http://github.zhangqx.com/data/Louis-J/HUILV?type=follower)
+![activity](http://github.zhangqx.com/data/Louis-J/HUILV?type=activity) -->
 有时当需要查询汇率时，常常难以快速找到合适的途径，本项目就是为了方便在偶然突发情况下，快速查询实时汇率和一段时间内汇率变化的小工具，打开微信搜索小程序即可使用。项目暂未开发完成上线，敬请期待。
 
 # 支持功能
@@ -8,6 +19,11 @@
 
 # 项目进度与开发规划
 + ![界面初稿](docs/界面初稿.jpg)
++ 项目结构(TBC)
+## 下一步计划
++ codestyle的选定
++ UI框架的选用和项目UI第一屏的绘制
++ 创建多分支并行开发
 
 # 项目成员
 + [Louis-J](https://github.com/Louis-J)
