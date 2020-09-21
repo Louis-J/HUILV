@@ -4,7 +4,7 @@
 ![contributing](http://github.zhangqx.com/file-checker/github/Louis-J/HUILV?path=CONTRIBUTING.md)
 ![coc](http://github.zhangqx.com/file-checker/github/Louis-J/HUILV?path=CODE_OF_CONDUCT.md)
 ![codestyle](http://github.zhangqx.com/file-checker/github/Louis-J/HUILV?path=CODE_STYLE.md)
-![pulltemplate](http://github.zhangqx.com/file-checker/github/Louis-J/HUILV?path=.github/PULL_REQUEST_TEMPLATE.md)
+![pulltemplate](http://github.zhangqx.com/file-checker/github/Louis-J/HUILV?path=.github/pull_request_template.md)
 
 ![contributor](http://github.zhangqx.com/data/github/Louis-J/HUILV?type=contributor)
 ![participant](http://github.zhangqx.com/data/github/Louis-J/HUILV?type=participant)
