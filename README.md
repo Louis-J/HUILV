@@ -25,6 +25,8 @@
 + codestyle的选定
 + UI框架的选用和项目UI第一屏的绘制
 + 创建多分支并行开发
++ 学习微信小程序的开发语言规则
+
 
 # 项目成员
 + [Louis-J](https://github.com/Louis-J)
