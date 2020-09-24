@@ -10,7 +10,7 @@
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#9999ff",
     "navigationBarTitleText": "快速汇率查询",
-    "navigationBarTextStyle": "white",
+    "navigationBarTextStyle": "black",
     "enablePullDownRefresh": false,
     "backgroundColor": "#FAFAD2"
   },
