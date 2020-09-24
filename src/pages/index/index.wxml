@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <!-- <navigator url="/pages/ui2/ui2" open-type="redirect">跳转到新页面</navigator>
+    <navigator url="/pages/ui2/ui2" open-type="switchTab">跳转到新页面</navigator> -->
+    <!-- <view class="btn-area">   -->
+      <!-- <navigator url="../ui2/ui2?title=我是navigate" > 跳转到新页面 </navigator>   -->
+      <!-- <navigator url="../ui2/ui2?title=我是redirect" redirect>在当前页打开</navigator>   -->
+    <!-- </view> -->
+    <!-- <navigator url="/pages/ui2/ui2?title=navigate" hover-class="navigator-hover">跳转到新页面</navigator> -->
+    <!-- <navigator url="/pages/ui2/ui2" open-type="switchTab" hover-class="other-navigator-hover">切换 Tab</navigator> -->
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <view class="btn-area">  
+    <navigator url="/pages/ui2/ui2">跳转到ui2页面</navigator>
+    <navigator url="/pages/ui3/ui3">跳转到ui3页面</navigator>
+    <view bindtap="gotoPage" data-page="ui2" class="mt20 list-item">ScrollLine</view>
+  </view>
+</view>
