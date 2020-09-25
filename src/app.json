@@ -11,8 +11,8 @@
     "navigationBarBackgroundColor": "#9999ff",
     "navigationBarTitleText": "快速汇率查询",
     "navigationBarTextStyle": "black",
-    "enablePullDownRefresh": false,
-    "backgroundColor": "#FAFAD2"
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#ffffff"
   },
   "tabBar": {
     "list": [{
