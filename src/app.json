@@ -18,15 +18,15 @@
     "list": [{
       "pagePath": "pages/p0/p0",
       "text": "汇率换算",
-      "iconPath": "icon/p0.png",
+      "iconPath": "icon/p00.png",
       "selectedIconPath": "icon/p0s.png"
     },{
-      "pagePath": "pages/p1/p1",
+      "pagePath": "pages/p11/p1",
       "text": "历史查询",
       "iconPath": "icon/p1.png",
       "selectedIconPath": "icon/p1s.png"
     },{
-      "pagePath": "pages/p2/p2",
+      "pagePath": "pages/p22/p2",
       "text": "关于",
       "iconPath": "icon/p2.png",
       "selectedIconPath": "icon/p2s.png"
