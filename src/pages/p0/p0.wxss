@@ -1,1 +1,8 @@
-/* pages/p0/p0.wxss */
+/* pages/p1/p1.wxss */
+.weui-label {
+    display: block;
+    width: 60px;
+    word-wrap: break-word;
+    word-break: break-all;
+    box-shadow: 0 0 black;
+}
