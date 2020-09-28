@@ -1,2 +1,3 @@
 <!--pages/p0/p0.wxml-->
-<text>pages/p0/p0.wxml</text>
+<view>选择币种</view>
+<view>选择日期</view>
