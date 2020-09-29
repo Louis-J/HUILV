@@ -1,20 +1,170 @@
-// pages/p1/p1.js
-Page({
-    mixins: [require('../../mixin/themeChanged')],
+module.exports = {
     data: {
-        showTopTips: false,
-
-        dateB: "2016-01-01",
-        dateE: "2020-09-01",
-        dateMin: "2016-01-01",
-        dateMax: new Date().getFullYear() + '-' + (new Date().getMonth() + 1) + '-' + new Date().getDate(),
-
-        
-        currencyIndexB: 32,
-        currencyIndexE: 57,
-        inputValB: '',
-        inputValE: '',
-
+        currencies: [
+            "AED",
+            "AFN",
+            "ALL",
+            "AMD",
+            "ANG",
+            "AOA",
+            "ARS",
+            "AUD",
+            "AWG",
+            "AZN",
+            "BAM",
+            "BBD",
+            "BDT",
+            "BGN",
+            "BHD",
+            "BIF",
+            "BMD",
+            "BND",
+            "BOB",
+            "BRL",
+            "BSD",
+            "BTN",
+            "BWP",
+            "BYN",
+            "BYR",
+            "BZD",
+            "CAD",
+            "CDF",
+            "CHF",
+            "CLF",
+            "CLP",
+            "CNH",
+            "CNY",
+            "COP",
+            "CRC",
+            "CUC",
+            "CUP",
+            "CVE",
+            "CZK",
+            "DJF",
+            "DKK",
+            "DOP",
+            "DZD",
+            "EGP",
+            "ERN",
+            "ETB",
+            "EUR",
+            "FJD",
+            "FKP",
+            "GBP",
+            "GEL",
+            "GHS",
+            "GIP",
+            "GMD",
+            "GNF",
+            "GTQ",
+            "GYD",
+            "HKD",
+            "HNL",
+            "HRK",
+            "HTG",
+            "HUF",
+            "IDR",
+            "ILS",
+            "INR",
+            "IQD",
+            "IRR",
+            "ISK",
+            "JMD",
+            "JOD",
+            "JPY",
+            "KES",
+            "KGS",
+            "KHR",
+            "KMF",
+            "KPW",
+            "KRW",
+            "KWD",
+            "KYD",
+            "KZT",
+            "LAK",
+            "LBP",
+            "LKR",
+            "LRD",
+            "LSL",
+            "LTL",
+            "LYD",
+            "MAD",
+            "MDL",
+            "MGA",
+            "MKD",
+            "MMK",
+            "MNT",
+            "MOP",
+            "MRO",
+            "MRU",
+            "MUR",
+            "MVR",
+            "MWK",
+            "MXN",
+            "MYR",
+            "MZN",
+            "NAD",
+            "NGN",
+            "NIO",
+            "NOK",
+            "NPR",
+            "NZD",
+            "OMR",
+            "PAB",
+            "PEN",
+            "PGK",
+            "PHP",
+            "PKR",
+            "PLN",
+            "PYG",
+            "QAR",
+            "RON",
+            "RSD",
+            "RUB",
+            "RWF",
+            "SAR",
+            "SBD",
+            "SCR",
+            "SDG",
+            "SEK",
+            "SGD",
+            "SHP",
+            "SLL",
+            "SOS",
+            "SRD",
+            "STD",
+            "SVC",
+            "SYP",
+            "SZL",
+            "THB",
+            "TJS",
+            "TMT",
+            "TND",
+            "TOP",
+            "TRY",
+            "TTD",
+            "TWD",
+            "TZS",
+            "UAH",
+            "UGX",
+            "USD",
+            "UYU",
+            "UZS",
+            "VEF",
+            "VES",
+            "VND",
+            "VUV",
+            "WST",
+            "XAF",
+            "XCD",
+            "XDR",
+            "XOF",
+            "XPF",
+            "YER",
+            "ZAR",
+            "ZMW",
+            "ZWL"
+        ],
         currenciesZH: [
             "阿联酋迪拉姆",
             "阿富汗尼",
@@ -180,116 +330,5 @@ Page({
             "赞比亚克瓦查",
             "津巴布韦元"
         ]
-    },
-    bindDateChangeB: function (e) {
-        this.setData({
-            dateB: e.detail.value
-        })
-    },
-    bindDateChangeE: function (e) {
-        this.setData({
-            dateE: e.detail.value
-        })
-    },
-    bindCurrencyChangeB: function (e) {
-        console.log('picker account 发生选择改变，携带值为', e.detail.value);
-        this.setData({
-            currencyIndexB: e.detail.value
-        })
-    },
-    bindCurrencyChangeE: function (e) {
-        console.log('picker account 发生选择改变，携带值为', e.detail.value);
-        this.setData({
-            currencyIndexE: e.detail.value
-        })
-    },
-    bindInputChangeB: function (e) {
-        // console.log('picker account 发生选择改变，携带值为', e.detail.value);
-        this.setData({
-            inputValB: e.detail.value
-        })
-    },
-    bindInputChangeE: function (e) {
-        // console.log('picker account 发生选择改变，携带值为', e.detail.value);
-        this.setData({
-            inputValE: e.detail.value
-        })
-    },
-    showTopTips: function(){
-        var that = this;
-        this.setData({
-            showTopTips: true,
-            inputValB: 100,
-            inputValE: 100
-        });
-        setTimeout(function(){
-            that.setData({
-                showTopTips: false,
-                inputValB: '',
-                inputValE: ''
-            });
-        }, 3000);
-    },
-    /**
-     * 页面的初始数据
-     */
-    // data: {
-
-    // },
-
-    /**
-     * 生命周期函数--监听页面加载
-     */
-    onLoad: function (options) {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面初次渲染完成
-     */
-    onReady: function () {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面显示
-     */
-    onShow: function () {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面隐藏
-     */
-    onHide: function () {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面卸载
-     */
-    onUnload: function () {
-
-    },
-
-    /**
-     * 页面相关事件处理函数--监听用户下拉动作
-     */
-    onPullDownRefresh: function () {
-
-    },
-
-    /**
-     * 页面上拉触底事件的处理函数
-     */
-    onReachBottom: function () {
-
-    },
-
-    /**
-     * 用户点击右上角分享
-     */
-    onShareAppMessage: function () {
-
     }
-})
+};

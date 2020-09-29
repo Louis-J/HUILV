@@ -2,10 +2,10 @@
   "pages": [
     "pages/p0/p0",
     "pages/p1/p1",
-    "pages/input/input",
     "pages/p2/p2",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/webview/webview"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -27,7 +27,7 @@
       "iconPath": "icon/p1.png",
       "selectedIconPath": "icon/p1s.png"
     },{
-      "pagePath": "pages/input/input",
+      "pagePath": "pages/p2/p2",
       "text": "关于",
       "iconPath": "icon/p2.png",
       "selectedIconPath": "icon/p2s.png"
