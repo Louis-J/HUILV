@@ -4,6 +4,7 @@
 <view>{{dateE}}</view>
 <view>{{currencyIndexB}}</view>
 <view>{{currencyIndexE}}</view>
+<view>{{keysign}}</view>
 
 <view class="page" data-weui-theme="{{theme}}">
     <view class="page__hd">
