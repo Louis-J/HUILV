@@ -5,6 +5,8 @@
 <view>{{inputValB}}</view>
 <view>{{inputValE}}</view>
 <view>{{showTopTips}}</view>
+<view>{{keysign}}</view>
+
 
 <view class="page" data-weui-theme="{{theme}}">
     <view class="page__hd">
@@ -46,9 +48,15 @@
         <view class="weui-cells__title">兑换换算</view>
         <view class="weui-cells weui-cells_after-title">
             <view class="weui-cell weui-cell_active">
+                <!-- <view class="weui-cell__bd">汇率：{{huilvA}}</view>
+                <view class="weui-cell__bd">汇率：{{huilvB}}</view> -->
+                <view class="weui-cell__bd">汇率：{{huilvC}}</view>
+            </view>
+        </view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_active">
                 <view class="weui-cell__bd">
                     <input class="weui-input" bindchange="bindInputChangeB" type="number" value="{{inputValB}}" placeholder="请输入金额" />
-					<!-- <input class="weui-input" type="number" placeholder="请输入金额" value="12345678907" placeholder-class="weui-input__placeholder" /> -->
                 </view>
             </view>
         </view>
@@ -56,7 +64,7 @@
         <view class="weui-cells weui-cells_after-title">
             <view class="weui-cell weui-cell_active">
                 <view class="weui-cell__bd">
-                    <input class="weui-input" bindinput="bindInputChangeE" type="number" value="{{inputValB}}" placeholder="兑换的金额" />
+                    <input class="weui-input" bindinput="bindInputChangeE" type="number" value="{{inputValE}}" placeholder="兑换的金额" />
                 </view>
             </view>
         </view>
