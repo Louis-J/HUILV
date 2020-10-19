@@ -3,8 +3,8 @@
     "pages/p0/p0",
     "pages/p1/p1",
     "pages/p2/p2",
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/webview/webview"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -36,5 +36,7 @@
     "backgroundColor": "#eeeeee"
   },
   "style": "v2",
+  "usingComponents": {
+  },
   "sitemapLocation": "sitemap.json"
 }
