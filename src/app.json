@@ -10,29 +10,29 @@
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#9999ff",
     "navigationBarTitleText": "快速汇率查询",
-    "navigationBarTextStyle": "black",
-    "enablePullDownRefresh": true,
-    "backgroundColor": "#ffffff"
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": false,
+    "backgroundColor": "#FAFAD2"
   },
   "tabBar": {
     "list": [{
       "pagePath": "pages/p0/p0",
       "text": "汇率换算",
       "iconPath": "icon/p00.png",
-      "selectedIconPath": "icon/p0s.png"
+      "selectedIconPath": "icon/p01.png"
     },{
-      "pagePath": "pages/p11/p1",
+      "pagePath": "pages/p1/p1",
       "text": "历史查询",
-      "iconPath": "icon/p1.png",
-      "selectedIconPath": "icon/p1s.png"
+      "iconPath": "icon/p11.png",
+      "selectedIconPath": "icon/p110.png"
     },{
-      "pagePath": "pages/p22/p2",
+      "pagePath": "pages/p2/p2",
       "text": "关于",
-      "iconPath": "icon/p2.png",
-      "selectedIconPath": "icon/p2s.png"
+      "iconPath": "icon/p22.png",
+      "selectedIconPath": "icon/p31.png"
     }],
     "color": "#bbbbbb",
-    "selectedColor": "#000000",
+    "selectedColor": "#5CACEE",
     "backgroundColor": "#eeeeee"
   },
   "style": "v2",
