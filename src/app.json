@@ -18,18 +18,18 @@
     "list": [{
       "pagePath": "pages/p0/p0",
       "text": "汇率换算",
-      "iconPath": "icon/p00.png",
-      "selectedIconPath": "icon/p01.png"
+      "iconPath": "icon/p0.png",
+      "selectedIconPath": "icon/p00.png"
     },{
       "pagePath": "pages/p1/p1",
       "text": "历史查询",
-      "iconPath": "icon/p11.png",
-      "selectedIconPath": "icon/p110.png"
+      "iconPath": "icon/p1.png",
+      "selectedIconPath": "icon/p11.png"
     },{
       "pagePath": "pages/p2/p2",
       "text": "关于",
-      "iconPath": "icon/p22.png",
-      "selectedIconPath": "icon/p31.png"
+      "iconPath": "icon/p2.png",
+      "selectedIconPath": "icon/p22.png"
     }],
     "color": "#bbbbbb",
     "selectedColor": "#5CACEE",
