@@ -3,12 +3,13 @@
     "pages/p0/p0",
     "pages/p1/p1",
     "pages/p2/p2",
+    "pages/p3/p3",
     "pages/logs/logs",
     "pages/webview/webview"
   ],
   "window": {
     "backgroundTextStyle": "dark",
-    "navigationBarBackgroundColor": "#9999ff",
+    "navigationBarBackgroundColor": "#5CACEE",
     "navigationBarTitleText": "快速汇率查询",
     "navigationBarTextStyle": "white",
     "enablePullDownRefresh": false,
