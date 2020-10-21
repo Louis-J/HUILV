@@ -4,8 +4,8 @@ Page({
     data: {
         showTopTips: false,
 
-        currencyIndexB: 32,
-        currencyIndexE: 57,
+        currencyIndexB: 0,
+        currencyIndexE: 5,
         inputValB: '',
         inputValE: '',
 
