@@ -1,0 +1,21 @@
+<!--pages/p3/p3.wxml-->
+<view class="page" data-weui-theme="{{theme}}">
+    <view class="page__hd">
+        <view class="page__title">
+            <image mode="heightFix" lazy-load src="../../icon/p22.png"/>
+            <text decode="{{true}}" space="{{true}}">&nbsp;</text>
+            关于我们
+        </view>
+        <view class="page__desc">Some information about this team</view>
+    </view>
+    <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_active">
+            <view class="weui-cell__bd">
+                <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;</text>
+                我们是来自北京大学软件与微电子学院的一个学生团队,我们制作这个微信小程序的目的就是希望能为大众提供一个便于使用的工具，以便能够随时随地对各个币种进行汇率查询和转换。
+                <text decode="{{true}}" space="{{true}}">\n&nbsp;&nbsp;&nbsp;&nbsp;</text>
+                这个项目是一个开源项目，我们也将源码网址链接到了"关于-程序说明"之中，非常欢迎大家加入到我们的开源社区之中！如果您有什么建议，也请联系我们。
+            </view>
+        </view>
+    </view>
+</view>

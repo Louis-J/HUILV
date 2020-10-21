@@ -12,7 +12,7 @@
         <view class="button-sp-area cell">
             <a class="weui-btn_cell weui-btn_cell-default" bindtap="gotoPage" data-url="/pages/webview/webview?srcurl=https://github.com/Louis-J/HUILV">程序说明</a>
             <a class="weui-btn_cell weui-btn_cell-default" bindtap="gotoPage" data-url="/pages/logs/logs" >LOG信息</a>
-            <a class="weui-btn_cell weui-btn_cell-primary">关于我们</a>
+            <a class="weui-btn_cell weui-btn_cell-primary" bindtap="gotoPage" data-url="/pages/p3/p3" >关于我们</a>
         </view>
 
     </view>
