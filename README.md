@@ -25,14 +25,16 @@
 + codestyle的选定
 + UI框架的选用和项目UI第一屏的绘制
 + 创建多分支并行开发
++ 学习微信小程序的开发语言规则
+
 
 # 项目成员
 + [Louis-J](https://github.com/Louis-J)
 + [Vanishing-Cake](https://github.com/VanishingCake)
 + [cbyy3](https://github.com/cbyy3)
 + [susanneli](https://github.com/susanneli)
-+
-+
++ [hellohelen222](https://github.com/hellohelen222)
++ [Kenscofield](https://github.com/Kenscofield)
 
 # 附：
 ## 关于：[开源训练营](https://github.com/kaiyuanshe/Open-source-training-camp)
