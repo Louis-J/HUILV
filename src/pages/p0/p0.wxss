@@ -6,3 +6,10 @@
     word-break: break-all;
     box-shadow: 0 0 black;
 }
+/* 不加的话弹出框会穿模 */
+.weui-select {
+    z-index: unset;
+}
+.weui-cells {
+    position: sticky;
+}

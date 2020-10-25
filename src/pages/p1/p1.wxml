@@ -1,10 +1,10 @@
 <!--pages/p1/p1.wxml-->
-<view>调试数据</view>
-<view>{{dateB}}</view>
-<view>{{dateE}}</view>
-<view>{{currencyIndexB}}</view>
-<view>{{currencyIndexE}}</view>
-<view>{{keysign}}</view>
+<view wx:if="{{debugMode}}">调试数据
+    <view>{{dateB}} : {{dateE}}</view>
+    <view>{{currencyIndexB}}</view>
+    <view>{{currencyIndexE}}</view>
+    <view>{{keysign}}</view>
+</view>
 
 <view class="page" data-weui-theme="{{theme}}">
     <view class="page__hd">
@@ -13,8 +13,6 @@
         <view class="page__desc"><navigator url="/example/form/form" class="link">垃圾</navigator> 。</view>
     </view>
     <view class="page__bd">
-        <view class="weui-toptips weui-toptips_warn" wx:if="{{showTopTips}}">错误提示</view>
-
         <!-- 时间选择 -->
         <view class="weui-cells__title">时间选择</view>
         <view class="weui-cells weui-cells_after-title">
@@ -69,8 +67,67 @@
 
         <view class="weui-btn-area">
             <!-- <button class="weui-btn" type="primary" bindtap="showTopTips">确定</button> -->
-            <button class="weui-btn" type="primary">查询</button>
+            <button class="weui-btn" type="primary" bindtap="queryChart">查询</button>
         </view>
-
+        <view>
+            <canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas" bindtouchstart="touchHandler"></canvas>
+            <!-- <button type="primary" bindtap="updateData">更新数据</button> -->
+        </view>
+    </view>
+    
+    <!-- 提示页0 -->
+    <view class="fadeIn" wx:if="{{tipDialog0}}">
+        <view class="weui-mask" bindtap="bindTipClose"></view>
+        <view class="weui-dialog weui-skin_android">
+            <view class="weui-dialog__hd"><strong class="weui-dialog__title">失败</strong></view>
+            <view class="weui-dialog__bd">
+                所选货币种类不应一致!
+            </view>
+            <view class="weui-dialog__ft">
+                <a class="weui-dialog__btn weui-dialog__btn_primary" bindtap="bindTipClose">好的</a>
+            </view>
+        </view>
+    </view>
+    
+    <!-- 提示页1 -->
+    <view class="fadeIn" wx:if="{{tipDialog1}}">
+        <view class="weui-mask" bindtap="bindTipClose"></view>
+        <view class="weui-dialog weui-skin_android">
+            <view class="weui-dialog__hd"><strong class="weui-dialog__title">失败</strong></view>
+            <view class="weui-dialog__bd">
+                结束日期应比开始日期晚!
+            </view>
+            <view class="weui-dialog__ft">
+                <a class="weui-dialog__btn weui-dialog__btn_primary" bindtap="bindTipClose">好的</a>
+            </view>
+        </view>
+    </view>
+    
+    <!-- 提示页2 -->
+    <view class="fadeIn" wx:if="{{tipDialog2}}">
+        <view class="weui-mask" bindtap="bindTipClose"></view>
+        <view class="weui-dialog weui-skin_android">
+            <view class="weui-dialog__hd"><strong class="weui-dialog__title">失败</strong></view>
+            <view class="weui-dialog__bd">
+                请等待上个查询结束!
+            </view>
+            <view class="weui-dialog__ft">
+                <a class="weui-dialog__btn weui-dialog__btn_primary" bindtap="bindTipClose">好的</a>
+            </view>
+        </view>
+    </view>
+    
+    <!-- 提示页3 -->
+    <view class="fadeIn" wx:if="{{tipDialog3}}">
+        <view class="weui-mask" bindtap="bindTipClose"></view>
+        <view class="weui-dialog weui-skin_android">
+            <view class="weui-dialog__hd"><strong class="weui-dialog__title">失败</strong></view>
+            <view class="weui-dialog__bd">
+                查询时错误数据过多!请考虑一段时间后再查询!
+            </view>
+            <view class="weui-dialog__ft">
+                <a class="weui-dialog__btn weui-dialog__btn_primary" bindtap="bindTipClose">好的</a>
+            </view>
+        </view>
     </view>
 </view>

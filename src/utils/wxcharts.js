@@ -324,7 +324,7 @@ function dataCombine(series) {
 function getSeriesDataItem(series, index) {
     var data = [];
     series.forEach(function (item) {
-        if (item.data[index] !== null && typeof item.data[index] !== 'undefined') {
+        if (item.data[index] !== null && typeof item.data[index] !== 'undefinded') {
             var seriesItem = {};
             seriesItem.color = item.color;
             seriesItem.name = item.name;
@@ -372,7 +372,7 @@ function getToolTipData(seriesData, calPoints, index, categories) {
         y: 0
     };
     calPoints.forEach(function (points) {
-        if (typeof points[index] !== 'undefined' && points[index] !== null) {
+        if (typeof points[index] !== 'undefinded' && points[index] !== null) {
             validCalPoints.push(points[index]);
         }
     });
@@ -500,7 +500,7 @@ function calLegendData(series, opts, config) {
     var widthCount = 0;
     var currentRow = [];
     series.forEach(function (item) {
-        var itemWidth = 3 * padding + shapeWidth + measureText(item.name || 'undefined');
+        var itemWidth = 3 * padding + shapeWidth + measureText(item.name || 'undefinded');
         if (widthCount + itemWidth > opts.width) {
             legendList.push(currentRow);
             widthCount = itemWidth;
@@ -1990,7 +1990,9 @@ Charts.prototype.showToolTip = function (e) {
         });
         if (index > -1) {
             var seriesData = getSeriesDataItem(this.opts.series, index);
-            if (seriesData.length !== 0) {
+            if (seriesData.length === 0) {
+                drawCharts.call(this, opts.type, opts, this.config, this.context);
+            } else {
                 var _getToolTipData = getToolTipData(seriesData, this.chartData.calPoints, index, this.opts.categories, option),
                     textList = _getToolTipData.textList,
                     offset = _getToolTipData.offset;
@@ -2000,9 +2002,11 @@ Charts.prototype.showToolTip = function (e) {
                     offset: offset,
                     option: option
                 };
+                drawCharts.call(this, opts.type, opts, this.config, this.context);
             }
+        } else {
+            drawCharts.call(this, opts.type, opts, this.config, this.context);
         }
-        drawCharts.call(this, opts.type, opts, this.config, this.context);
     }
 };
 
