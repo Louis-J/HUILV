@@ -6,7 +6,7 @@
   "setting": {
     "urlCheck": false,
     "es6": true,
-    "enhance": false,
+    "enhance": true,
     "postcss": true,
     "preloadBackgroundData": false,
     "minified": true,
@@ -28,6 +28,7 @@
       "disablePlugins": [],
       "outputPath": ""
     },
+    "bundle": true,
     "useIsolateContext": true,
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
@@ -35,8 +36,8 @@
     "packNpmRelationList": []
   },
   "compileType": "miniprogram",
-  "libVersion": "2.12.2",
-  "appid": "wx07bfb8926cbf8b58",
+  "libVersion": "2.13.1",
+  "appid": "wxafcce2dd5e9a7f48",
   "projectname": "HUILV",
   "debugOptions": {
     "hidedInDevtools": []

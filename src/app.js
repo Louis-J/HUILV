@@ -340,6 +340,7 @@ var currenciesZH = [    
 App({
     globalData: {
         theme: 'light', // dark
+        debugMode: false,
         currencies: currencies,
         currenciesZH: currenciesZH,
         keysign: ''
@@ -393,24 +394,18 @@ App({
                 }
             }
         })
-        //获取汇率appkey和sign
-        // this.globalData.keysign = "B"
-        this.globalData.keysign = "10003&sign=b59bc3ef6191eb9f747dd4e83c99f2a4"
-        // var keysign = "10003&sign=b59bc3ef6191eb9f747dd4e83c99f2a4"
+        this.globalData.keysign = "10003&sign=b59bc3ef6191eb9f747dd4e83c99f2a4";
+        // 获取汇率appkey和sign
         // var that = this;
         // wx.request({
         //     url: "https://www.nowapi.com/api/finance.rate_history",
         //     success: function( res ) {
-        //         // console.log('哈哈哈哈哈', res.data);
-        //         // console.log('哈哈哈哈哈', typeof(res.data));
         //         var b = res.data.indexOf('10003&')
         //         var e = res.data.indexOf('&format')
         //         var keysign = res.data.substr(b, e-b)
-        //         console.log('哈哈哈哈哈', keysign);
+        //         console.log('keysign: ', keysign);
+        //         that.globalData.keysign = keysign;
         //     }
-        // })
+        // });
     },
-    // globalData: {
-    //     userInfo: null
-    // }
 })
