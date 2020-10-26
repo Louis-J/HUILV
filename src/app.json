@@ -1,7 +1,6 @@
 {
   "pages": [
     "pages/p0/p0",
-    "pages/p1/p1",
     "pages/p2/p2",
     "pages/p3/p3",
     "pages/logs/logs",
@@ -21,11 +20,6 @@
       "text": "汇率换算",
       "iconPath": "icon/p0.png",
       "selectedIconPath": "icon/p00.png"
-    },{
-      "pagePath": "pages/p1/p1",
-      "text": "历史查询",
-      "iconPath": "icon/p1.png",
-      "selectedIconPath": "icon/p11.png"
     },{
       "pagePath": "pages/p2/p2",
       "text": "关于",

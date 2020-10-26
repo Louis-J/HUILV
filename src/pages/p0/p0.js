@@ -4,6 +4,7 @@ Page({
     data: {
         debugMode: false,
         tipDialog0: false,
+        tipDialog1: false,
 
         currencyIndexB: 0,
         currencyIndexE: 5,
@@ -12,7 +13,7 @@ Page({
         inputValE: '',
 
         keysign: '',
-        huilv: 0,
+        huilv: null,
 
         currencies: [],
         currenciesZH: [],
@@ -22,6 +23,7 @@ Page({
     bindTipClose: function () {
         this.setData({
             tipDialog0: false,
+            tipDialog1: false,
         })
     },
     bindDateChangeB: function (e) {
@@ -51,7 +53,7 @@ Page({
         this.setData({
             inputValB: e.detail.value
         })
-        if(this.data.huilv != 0) {
+        if(this.data.huilv != null && this.data.huilv != 0) {
             var valE = this.data.inputValB * this.data.huilv
             this.setData({
                 inputValE: valE
@@ -90,19 +92,23 @@ Page({
             url: url,
             success: function( res ) {
                 console.log('查询res为：', res);
-                that.setData({
-                    queryurl: url,
-                    queryret: res.errMsg,
-                    huilv: res.data.result.rate
-                })
+                if(res.data.success == '0') {
+                    console.log('查询失败');
+                    that.setData({
+                        huilv: null,
+                        tipDialog1: true
+                    });
+                } else
+                    that.setData({
+                        huilv: res.data.result.rate,
+                    });
             },
             fail: function( res ) {
                 console.log('查询res为：', res);
                 that.setData({
-                    queryurl: url,
-                    queryret: res.errMsg,
-                    huilv: -100
-                })
+                    huilv: null,
+                    tipDialog1: true
+                });
             },
         })
     },

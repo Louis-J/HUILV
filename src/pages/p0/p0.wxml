@@ -70,13 +70,26 @@
         </view>
     </view>
 
-    <!-- 提示页 -->
+    <!-- 提示页0 -->
     <view class="fadeIn" wx:if="{{tipDialog0}}">
         <view class="weui-mask" bindtap="bindTipClose"></view>
         <view class="weui-dialog weui-skin_android">
             <view class="weui-dialog__hd"><strong class="weui-dialog__title">失败</strong></view>
             <view class="weui-dialog__bd">
                 所选货币种类不应一致!
+            </view>
+            <view class="weui-dialog__ft">
+                <a class="weui-dialog__btn weui-dialog__btn_primary" bindtap="bindTipClose">好的</a>
+            </view>
+        </view>
+    </view>
+    <!-- 提示页1 -->
+    <view class="fadeIn" wx:if="{{tipDialog1}}">
+        <view class="weui-mask" bindtap="bindTipClose"></view>
+        <view class="weui-dialog weui-skin_android">
+            <view class="weui-dialog__hd"><strong class="weui-dialog__title">失败</strong></view>
+            <view class="weui-dialog__bd">
+                查询时错误数据过多!请考虑一段时间后再查询!
             </view>
             <view class="weui-dialog__ft">
                 <a class="weui-dialog__btn weui-dialog__btn_primary" bindtap="bindTipClose">好的</a>
