@@ -2,8 +2,8 @@
 <view wx:if="{{debugMode}}">调试数据
     <view>{{currencyIndexB}}</view>
     <view>{{currencyIndexE}}</view>
-    <view>{{inputValB}}</view>
-    <view>{{inputValE}}</view>
+    <view>ib:{{inputValB}}</view>
+    <view>ie:{{inputValE}}</view>
     <view>{{showTopTips}}</view>
     <view>{{keysign}}</view>
     <view>{{queryurl}}</view>
@@ -12,9 +12,9 @@
 
 <view class="page" data-weui-theme="{{theme}}">
     <view class="page__hd">
-        <view class="page__title">垃圾</view>
-        <view class="page__desc">垃圾</view>
-        <view class="page__desc"><navigator url="/example/form/form" class="link">垃圾</navigator> 。</view>
+        <!-- <view class="page__title">垃圾</view> -->
+        <view class="page__desc">鉴于本系统使用非人工检索方式，无法确定您输入的条件是否合法，所以本系统对检索结果不承担责任。如果因以本系统的检索结果作为任何商业行为或者学术研究的依据而产生不良后果的，本系统不承担任何法律责任。</view>
+        <!-- <view class="page__desc"><navigator url="/example/form/form" class="link">垃圾</navigator> 。</view> -->
     </view>
     <view class="page__bd">
         <view class="weui-toptips weui-toptips_warn" wx:if="{{showTopTips}}">错误提示</view>
@@ -57,14 +57,14 @@
         <view class="weui-cells weui-cells_after-title">
             <view class="weui-cell weui-cell_active">
                 <view class="weui-cell__bd">
-                    <input class="weui-input" bindtap="bindInputChangeB" type="number" value="{{inputValB}}" placeholder="请输入金额" />
+                    <input class="weui-input" bindinput="bindInputChangeB" type="number" value="{{inputValB}}" placeholder="请输入金额" />
                 </view>
             </view>
         </view>
         <view class="weui-cells weui-cells_after-title">
             <view class="weui-cell weui-cell_active">
                 <view class="weui-cell__bd">
-                    <input class="weui-input" bindtap="bindInputChangeE" type="number" value="{{inputValE}}" placeholder="兑换的金额" />
+                    <input class="weui-input" bindinput="bindInputChangeE" type="number" value="{{inputValE}}" placeholder="兑换的金额" />
                 </view>
             </view>
         </view>
