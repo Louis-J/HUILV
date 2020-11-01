@@ -13,7 +13,7 @@ Page({
         inputValE: '',
 
         keysign: '',
-        huilv: null,
+        huilv: "未查询",
 
         currencies: [],
         currenciesZH: [],
@@ -53,7 +53,7 @@ Page({
         this.setData({
             inputValB: e.detail.value
         })
-        if(this.data.huilv != null && this.data.huilv != 0) {
+        if(this.data.huilv != "未查询" && this.data.huilv != 0) {
             var valE = this.data.inputValB * this.data.huilv
             this.setData({
                 inputValE: valE
@@ -65,7 +65,7 @@ Page({
         this.setData({
             inputValE: e.detail.value
         })
-        if(this.data.huilv != null && this.data.huilv != 0) {
+        if(this.data.huilv != "未查询" && this.data.huilv != 0) {
             var valB = this.data.inputValE / this.data.huilv
             this.setData({
                 inputValB: valB
@@ -96,18 +96,24 @@ Page({
                 if(res.data.success == '0') {
                     console.log('查询失败');
                     that.setData({
-                        huilv: null,
+                        huilv: "未查询",
+                        inputValB: '',
+                        inputValE: '',
                         tipDialog1: true
                     });
                 } else
                     that.setData({
                         huilv: res.data.result.rate,
+                        inputValB: '',
+                        inputValE: '',
                     });
             },
             fail: function( res ) {
                 console.log('查询res为：', res);
                 that.setData({
-                    huilv: null,
+                    huilv: "未查询",
+                    inputValB: '',
+                    inputValE: '',
                     tipDialog1: true
                 });
             },
