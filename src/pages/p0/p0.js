@@ -49,7 +49,7 @@ Page({
         })
     },
     bindInputChangeB: function (e) {
-        // console.log('picker account 发生选择改变，携带值为', e.detail.value);
+        console.log('bindInputChangeB', e.detail.value);
         this.setData({
             inputValB: e.detail.value
         })
@@ -61,10 +61,11 @@ Page({
         }
     },
     bindInputChangeE: function (e) {
+        console.log('bindInputChangeE', e.detail.value);
         this.setData({
             inputValE: e.detail.value
         })
-        if(this.data.huilv != 0) {
+        if(this.data.huilv != null && this.data.huilv != 0) {
             var valB = this.data.inputValE / this.data.huilv
             this.setData({
                 inputValB: valB

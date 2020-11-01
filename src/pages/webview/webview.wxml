@@ -1,1 +1,3 @@
-<web-view src="{{srcurl}}"></web-view>
+<view>请复制以下网址到浏览器中打开:</view>
+<view>{{srcurl}}</view>
+<!-- <web-view src="{{srcurl}}"></web-view> -->
