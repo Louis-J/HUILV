@@ -2,15 +2,15 @@
 
 <view class="page" data-weui-theme="{{theme}}">
     <view class="page__hd">
-        <view class="page__title">垃圾</view>
+        <!-- <view class="page__title">垃圾</view>
         <view class="page__desc">垃圾</view>
         <view class="page__desc">
             <navigator url="/example/form/form" class="link">垃圾</navigator> 。
-        </view>
+        </view> -->
     </view>
     <view class="page__bd">
         <view class="button-sp-area cell">
-            <a class="weui-btn_cell weui-btn_cell-default" bindtap="gotoPage" data-url="/pages/webview/webview?srcurl=https://github.com/Louis-J/HUILV">程序说明</a>
+            <a class="weui-btn_cell weui-btn_cell-default" bindtap="gotoPage" data-url="/pages/webview/webview?srcurl=https://github.com/Louis-J/HUILV">项目地址</a>
             <a class="weui-btn_cell weui-btn_cell-default" bindtap="gotoPage" data-url="/pages/logs/logs" >LOG信息</a>
             <a class="weui-btn_cell weui-btn_cell-primary" bindtap="gotoPage" data-url="/pages/p3/p3" >关于我们</a>
         </view>
